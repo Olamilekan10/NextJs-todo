@@ -66,12 +66,12 @@ export default function Home() {
                 >
                   Edit
                 </button>
-                <button
+                {/* <button
                   onClick={() => deleteTask(task.id)}
                   className="text-red-500 hover:text-red-700"
                 >
                   Delete
-                </button>
+                </button> */}
               </div>
             </li>
           ))}
