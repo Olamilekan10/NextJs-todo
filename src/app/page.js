@@ -1,11 +1,11 @@
-'use client';
+// 'use client';
 import { useState } from 'react';
 
-export default function Home() {
-  const [tasks, setTasks] = useState([]);
-  const [newTask, setNewTask] = useState('');
-  const [isEditing, setIsEditing] = useState(false);
-  const [currentTask, setCurrentTask] = useState(null);
+// export default function Home() {
+//   const [tasks, setTasks] = useState([]);
+//   const [newTask, setNewTask] = useState('');
+//   const [isEditing, setIsEditing] = useState(false);
+//   const [currentTask, setCurrentTask] = useState(null);
 
   const addTask = () => {
     if (!newTask.trim()) return;
@@ -62,7 +62,7 @@ export default function Home() {
               <div>
                 <button
                   onClick={() => editTask(task)}
-                  className="text-blue-500 hover:text-blue-700 mx-2"
+                  className="text-blue-500 hover:text-blue-700"
                 >
                   Edit
                 </button>
