@@ -7,31 +7,31 @@ export default function Home() {
   const [isEditing, setIsEditing] = useState(false);
   const [currentTask, setCurrentTask] = useState(null);
 
-  const addTask = () => {
-    if (!newTask.trim()) return;
+  // const addTask = () => {
+  //   if (!newTask.trim()) return;
 
-    if (isEditing) {
-      setTasks(
-        tasks.map((task) =>
-          task.id === currentTask.id ? { ...task, text: newTask } : task
-        )
-      );
-      setIsEditing(false);
-    } else {
-      setTasks([...tasks, { id: Date.now(), text: newTask }]);
-    }
-    setNewTask('');
-  };
+  //   if (isEditing) {
+  //     setTasks(
+  //       tasks.map((task) =>
+  //         task.id === currentTask.id ? { ...task, text: newTask } : task
+  //       )
+  //     );
+  //     setIsEditing(false);
+  //   } else {
+  //     setTasks([...tasks, { id: Date.now(), text: newTask }]);
+  //   }
+  //   setNewTask('');
+  // };
 
-  const deleteTask = (id) => {
-    setTasks(tasks.filter((task) => task.id !== id));
-  };
+  // const deleteTask = (id) => {
+  //   setTasks(tasks.filter((task) => task.id !== id));
+  // };
 
-  const editTask = (task) => {
-    setIsEditing(true);
-    setNewTask(task.text);
-    setCurrentTask(task);
-  };
+  // const editTask = (task) => {
+  //   setIsEditing(true);
+  //   setNewTask(task.text);
+  //   setCurrentTask(task);
+  // };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
