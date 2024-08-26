@@ -1,4 +1,4 @@
-// 'use client';
+'use client';
 import { useState } from 'react';
 
 export default function Home() {
@@ -76,6 +76,8 @@ export default function Home() {
             </li>
           ))}
         </ul>
+
+        <span></span>
       </div>
     </div>
   );
