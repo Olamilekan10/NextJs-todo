@@ -62,7 +62,7 @@ export default function Home() {
               <div>
                 <button
                   onClick={() => editTask(task)}
-                  className="text-blue-500 hover:text-blue-700"
+                  className="text-blue-500 hover:text-blue-700 mx-2"
                 >
                   Edit
                 </button>
